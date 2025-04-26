@@ -1,0 +1,90 @@
+/* ../Styles/NotificationsDropdown.css */
+
+/* Trigger button */
+.notification-dropdown-trigger {
+  padding: 10px;
+  background-color: rgba(78, 125, 247, 0.08);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  box-shadow: 0 0 0 rgba(78, 125, 247, 0);
+}
+
+.notification-dropdown-trigger:hover {
+  background-color: rgba(78, 125, 247, 0.18);
+  box-shadow: 0 4px 8px rgba(78, 125, 247, 0.2);
+}
+
+/* Icon */
+.notification-icon {
+  font-size: 22px;
+  color: #4e7df7;
+  transition: color 0.3s ease;
+}
+
+.notification-dropdown-trigger:hover .notification-icon {
+  color: #ababab;
+}
+
+/* Badge */
+.notification-badge {
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  min-width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: #ff4d4f;
+  color: #fff;
+  font-size: 11px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  padding: 0 5px;
+  box-shadow: 0 0 0 2px #fff;
+}
+
+/* Menu items */
+.notification-menu-item {
+  padding: 14px 18px;
+  border-bottom: 1px solid #eaeaea;
+  transition: background-color 0.25s ease;
+  cursor: pointer;
+}
+
+.notification-menu-item:last-child {
+  border-bottom: none;
+}
+
+.notification-menu-item:hover {
+  background-color: #f0f4ff;
+}
+
+/* Notification content */
+.notification-title {
+  font-size: 15px;
+  font-weight: 700;
+  color: #2c2c2c;
+  margin-bottom: 6px;
+}
+
+.notification-description {
+  font-size: 13px;
+  color: #777;
+  line-height: 1.4;
+  margin: 0;
+}
+
+/* Empty state */
+.empty-dropdown-message {
+  padding: 20px;
+  text-align: center;
+  color: #bbb;
+  font-size: 14px;
+  font-style: italic;
+}

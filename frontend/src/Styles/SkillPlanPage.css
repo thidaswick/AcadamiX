@@ -1,0 +1,256 @@
+.skill-plan-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f5f7fa 0%, #e4e8eb 100%);
+  padding: 40px 20px;
+}
+
+.skill-plan-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 24px;
+}
+
+.skill-plan-sidebar {
+  background: #fff;
+  border-radius: 20px;
+  padding: 24px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  height: fit-content;
+  position: sticky;
+  top: 24px;
+}
+
+.skill-plan-sidebar-header {
+  margin-bottom: 24px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #E0E0E0;
+}
+
+.skill-plan-sidebar-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #262626;
+  margin-bottom: 8px;
+  background: linear-gradient(to right, #2E7D32, #1B5E20);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.skill-plan-sidebar-description {
+  font-size: 14px;
+  color: #8c8c8c;
+  line-height: 1.5;
+}
+
+.skill-plan-filters {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.skill-plan-filter-group {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.skill-plan-filter-label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #262626;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.skill-plan-filter-options {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.skill-plan-filter-option {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.skill-plan-filter-option:hover {
+  background-color: rgba(46, 125, 50, 0.05);
+}
+
+.skill-plan-filter-option input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  accent-color: #2E7D32;
+}
+
+.skill-plan-filter-option label {
+  font-size: 14px;
+  color: #595959;
+  cursor: pointer;
+}
+
+.skill-plan-main {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.skill-plan-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.skill-plan-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #262626;
+  background: linear-gradient(to right, #2E7D32, #1B5E20);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.skill-plan-actions {
+  display: flex;
+  gap: 12px;
+}
+
+.skill-plan-search {
+  position: relative;
+  width: 300px;
+}
+
+.skill-plan-search input {
+  width: 100%;
+  padding: 12px 16px 12px 40px;
+  border: 1px solid #E0E0E0;
+  border-radius: 12px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  background-color: #fff;
+}
+
+.skill-plan-search input:focus {
+  border-color: #2E7D32;
+  box-shadow: 0 0 0 3px rgba(46, 125, 50, 0.1);
+  outline: none;
+}
+
+.skill-plan-search-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #8c8c8c;
+}
+
+.skill-plan-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.skill-plan-stat-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.skill-plan-stat-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.skill-plan-stat-title {
+  font-size: 14px;
+  color: #8c8c8c;
+  margin-bottom: 8px;
+}
+
+.skill-plan-stat-value {
+  font-size: 24px;
+  font-weight: 600;
+  color: #262626;
+}
+
+.skill-plan-stat-trend {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 12px;
+  margin-top: 8px;
+}
+
+.skill-plan-stat-trend.positive {
+  color: #2E7D32;
+}
+
+.skill-plan-stat-trend.negative {
+  color: #dc3545;
+}
+
+.skill-plan-content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .skill-plan-container {
+    grid-template-columns: 1fr;
+  }
+
+  .skill-plan-sidebar {
+    position: static;
+  }
+
+  .skill-plan-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .skill-plan-page {
+    padding: 24px 16px;
+  }
+
+  .skill-plan-header {
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-start;
+  }
+
+  .skill-plan-search {
+    width: 100%;
+  }
+
+  .skill-plan-stats {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 576px) {
+  .skill-plan-page {
+    padding: 20px 12px;
+  }
+
+  .skill-plan-title {
+    font-size: 24px;
+  }
+
+  .skill-plan-sidebar {
+    padding: 16px;
+  }
+} 

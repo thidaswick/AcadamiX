@@ -1,0 +1,77 @@
+/* ../Styles/TopBox.css */
+
+.topbox-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  padding: 16px;
+  margin-bottom: 24px;
+}
+
+.topbox-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 16px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.stories-container {
+  display: flex;
+  overflow-x: auto;
+  padding: 8px 0;
+  gap: 16px;
+  scrollbar-width: thin;
+}
+
+.stories-container::-webkit-scrollbar {
+  height: 6px;
+}
+
+.stories-container::-webkit-scrollbar-thumb {
+  background-color: #e0e0e0;
+  border-radius: 6px;
+}
+
+.my_story_card {
+  min-width: 80px;
+  height: 120px;
+  border-radius: 12px;
+  background: linear-gradient(to bottom right, #4e7df7, #5e6ee3);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 8px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 2px 8px rgba(94, 110, 227, 0.3);
+}
+
+.my_story_card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(94, 110, 227, 0.4);
+}
+
+.create-icon {
+  font-size: 24px;
+  margin-bottom: 8px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.create-text {
+  font-size: 12px;
+  font-weight: 500;
+  text-align: center;
+}

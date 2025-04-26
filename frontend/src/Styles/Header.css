@@ -1,0 +1,325 @@
+/* header.css */
+.header {
+  min-height: 100vh;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.365), rgba(0, 0, 0, 0.85)), 
+              url("https://images.pexels.com/photos/9786058/pexels-photo-9786058.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Add this in your header.css or similar */
+.header {
+  background-color: #f0f0f0;
+  /* Normal styles */
+}
+
+.header--logged-in {
+  background-color: #0000007a; /* Black background for logged-in users */
+  /* Other styles for logged-in state */
+}
+
+.section__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  z-index: 10;
+  position: relative;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.header__content {
+  width: 100%;
+  max-width: 900px;
+  color: #fff;
+  text-align: center;
+  margin: 0 auto;
+  padding: 40px 20px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.header__content h1 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.header__content h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: rgba(255, 255, 255, 0.9);
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.header__content p {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.9);
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header__btn {
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
+  padding: 22px 42px;
+  border-radius: 4px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 1px solid #fff;
+  outline: none;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+.btn__primary {
+  background: transparent;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+}
+
+.btn__primary::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #2E7D32;
+  transition: width 0.3s ease;
+  z-index: -1;
+}
+
+.btn__primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(46, 125, 50, 0.3);
+  color: #fff;
+}
+
+.btn__primary:hover::before {
+  width: 100%;
+}
+
+.btn__primary:active {
+  transform: translateY(1px);
+}
+
+/* Decorative elements */
+.header::before {
+  content: '';
+  position: absolute;
+  top: -100px;
+  right: -100px;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: rgba(46, 125, 50, 0.1);
+  backdrop-filter: blur(5px);
+}
+
+.header::after {
+  content: '';
+  position: absolute;
+  bottom: -100px;
+  left: -100px;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background: rgba(46, 125, 50, 0.1);
+  backdrop-filter: blur(5px);
+}
+
+@media screen and (max-width: 768px) {
+  .header__content h1 {
+    font-size: 2.5rem;
+  }
+  
+  .header__content h2 {
+    font-size: 1.5rem;
+  }
+  
+  .header__content p {
+    font-size: 1rem;
+  }
+  
+  .btn {
+    padding: 14px 28px;
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .header__content h1 {
+    font-size: 2rem;
+  }
+  
+  .header__content h2 {
+    font-size: 1.2rem;
+  }
+}
+
+.header__search {
+  position: relative;
+  width: 80%;
+  max-width: 800px;
+  margin: 0 auto 30px;
+}
+
+.header__search form {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.header__search input {
+  width: 100%;
+  padding: 20px 30px;
+  border-radius: 50px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(5px);
+}
+
+.header__search input::placeholder {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1.2rem;
+}
+
+.header__search input:focus {
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 0 2px rgba(46, 125, 50, 0.3);
+}
+
+.header__search .search__button {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.5rem;
+  padding: 10px;
+}
+
+.auth-modal-blur .ant-modal-content {
+  background: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(45px) saturate(180%);
+  -webkit-backdrop-filter: blur(45px) saturate(180%);
+  border-radius: 16px;
+  box-shadow: 0 8px 32px 0 rgba(46, 125, 50, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.45);
+}
+
+.auth-modal-blur .ant-modal-header {
+  background: transparent;
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.auth-modal-blur .ant-modal-title {
+  color: #1e293b;
+  font-weight: 700;
+  font-size: 1.7rem;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+
+.auth-modal-blur .ant-modal-close-x {
+  color: #1e293b;
+}
+
+.auth-modal-blur .ant-modal-body {
+  color: #1e293b;
+}
+
+.auth-modal-blur .ant-divider {
+  color: #1e293b;
+  opacity: 0.7;
+}
+
+.auth-modal-blur .ant-form-item label {
+  color: #1e293b !important;
+  opacity: 0.9;
+}
+
+.auth-modal-blur .ant-input, 
+.auth-modal-blur .ant-input-password, 
+.auth-modal-blur .ant-input-affix-wrapper {
+  background: rgba(255, 255, 255, 0.9) !important;
+  border-radius: 12px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  color: #1e293b;
+  font-size: 1.05rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.auth-modal-blur .ant-input:focus, 
+.auth-modal-blur .ant-input-password:focus, 
+.auth-modal-blur .ant-input-affix-wrapper:focus {
+  border: 1.5px solid rgba(59, 130, 246, 0.5);
+  background: rgba(255, 255, 255, 0.95) !important;
+}
+
+.auth-modal-blur .ant-btn-primary {
+  background-color: #2E7D32;
+  border-color: #2E7D32;
+}
+
+.auth-modal-blur .ant-btn-primary:hover {
+  background-color: #1B5E20;
+  border-color: #1B5E20;
+}
+
+.auth-modal-blur .ant-upload {
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 12px;
+  border: 1px dashed rgba(59, 130, 246, 0.4);
+  transition: all 0.3s ease;
+}
+
+.auth-modal-blur .ant-upload:hover {
+  border-color: rgba(59, 130, 246, 0.8);
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.auth-modal-blur .ant-upload-text {
+  color: #1e293b !important;
+}
