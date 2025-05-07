@@ -17,6 +17,6 @@ public class JwtToUserConverter implements Converter<Jwt, UsernamePasswordAuthen
         user.setId(source.getSubject());
         return new UsernamePasswordAuthenticationToken(user,source, Collections.EMPTY_LIST);
     }
-
+//rwrw
 
 }
