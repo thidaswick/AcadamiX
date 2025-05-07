@@ -31,6 +31,8 @@ class WorkoutStoryService {
       console.error("Error creating workout story:", error.response?.data || error.message);
       message.error(error.response?.data?.message || "Failed to create workout story");
       throw error;
+      //error fixed
+      
     }
   }
 
