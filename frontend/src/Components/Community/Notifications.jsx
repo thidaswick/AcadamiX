@@ -3,9 +3,9 @@ import { List, Empty } from "antd";
 import NotificationService from "../../Services/NotificationService";
 import { useSnapshot } from "valtio";
 import state from "../../Utils/Store";
-// import "../Styles/Notifications.css";
+import "../Styles/Notifications.css";
 
-//const Notifications = () => {
+const Notifications = () => {
   const [notifications, setNotifications] = useState([]);
   const [loading, setLoading] = useState(true);
   const snap = useSnapshot(state);
