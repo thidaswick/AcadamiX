@@ -1,7 +1,6 @@
 import axios from "axios";
 import { BASE_URL } from "../constants";
 import NotificationService from "./NotificationService";
-//create commentService.js
 class CommentService {
   async createComment(commentData, username, userId) {
     try {
