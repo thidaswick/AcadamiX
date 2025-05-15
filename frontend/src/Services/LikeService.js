@@ -1,7 +1,7 @@
 import axios from "axios";
 import { BASE_URL } from "../constants";
 import NotificationService from "./NotificationService";
-
+//create like service
 class LikeService {
   async getLikesByPostId(postId) {
     try {
