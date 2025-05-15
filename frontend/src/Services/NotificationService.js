@@ -35,5 +35,5 @@ const NotificationService = {
     }
   },
 };
-
+ NotificationServices
 export default NotificationService;
