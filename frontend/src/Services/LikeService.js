@@ -60,3 +60,5 @@ class LikeService {
 }
 
 export default new LikeService();
+
+//Fix error of like service 
