@@ -5,7 +5,7 @@ import NotificationService from "../../Services/NotificationService";
 import { useSnapshot } from "valtio";
 import state from "../../Utils/Store";
 import "../Styles/NotificationsDropdown.css";
-
+//can't fetch notification
 const NotificationsDropdown = () => {
   const [notifications, setNotifications] = useState([]);
   const [loading, setLoading] = useState(true);
