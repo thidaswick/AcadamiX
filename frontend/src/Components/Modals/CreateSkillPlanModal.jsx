@@ -52,10 +52,7 @@ const CreateSkillPlanModal = () => {
     }
   };
 
-  //const CreateSkillPlanModal = () => {
-   // const snap = useSnapshot(state);
-    //const [loading, setLoading] = useState(false);
-    //const [form] = Form.useForm();
+  
 
   return (
     <Modal
