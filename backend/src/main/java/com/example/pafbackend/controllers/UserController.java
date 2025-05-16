@@ -14,6 +14,46 @@ import org.springframework.http.ResponseEntity;
 @RequestMapping("/api/users")
 public class UserController {
 
+
+    
+    @Autowired
+    private UserRepository userRepository;
+
+    // Create a new user
+    @PostMapping("/create")
+    public User createUser(@RequestBody User user) {
+        return userRepository.save(user);
+    }
+
+    // Retrieve all users
+    @GetMapping
+    public List<User> getAllUsers() {
+        return userRepository.findAll();
+    }
+
+    // Retrieve a user by ID
+    @GetMapping("/{id}")
+    public Optional<User> getUserById(@PathVariable String id) {
+        return userRepository.findById(id);
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     @Autowired
     private UserRepository userRepository;
 
