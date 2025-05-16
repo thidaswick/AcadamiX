@@ -12,6 +12,14 @@ const CreateSkillPlanModal = () => {
   const [loading, setLoading] = useState(false);
   const [form] = Form.useForm();
 
+  //import React, { useState } from "react";
+//import { Modal, Form, Input, Button, Select, DatePicker, Checkbox, message } from "antd";
+//import { useSnapshot } from "valtio";
+//import dayjs from "dayjs";
+//import state from "../../Utils/Store";
+//import SkillPlanService from "../../Services/SkillPlanService";
+
+
   const handleSubmit = async () => {
     try {
       setLoading(true);
