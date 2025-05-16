@@ -17,6 +17,9 @@ const UserConnectionService = {
     } catch (error) {
       console.error("Error fetching user connections:", error);
       throw error;
+
+
+
     }
   },
 
@@ -36,6 +39,14 @@ const UserConnectionService = {
       throw error;
     }
   },
+  deleteUserConnection: async (userId, friendId) => {
+    try {
+      const accessToken = localStorage.getItem("accessToken");
+      const config = {
+        headers: {
+          Authorization: `Bearer ${accessToken}`,
+        },
+      };
 
   deleteUserConnection: async (userId, friendId) => {
     try {
