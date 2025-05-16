@@ -97,6 +97,34 @@ const UserService = {
       throw error;
     }
   },
+  async getProfile() {
+    try {
+      const uid = localStorage.getItem("userId");
+      const accessToken = localStorage.getItem("accessToken");
+
+      if (!uid || !accessToken) {
+        message.error("Please login to view your profile");
+        return;
+      }
+
+      const config = {
+        headers: {
+          Authorization: `Bearer ${accessToken}`,
+        },
+      };
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   async getProfile() {
     try {

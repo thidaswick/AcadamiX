@@ -11,7 +11,7 @@ import "../../Styles/LeftMenu.css";
 import UserConnectionService from "../../Services/UserConnectionService";
 const { TabPane } = Tabs;
 
-const FriendProfileModal = () => {
+const FriendProfileModal = () => {g
   const snap = useSnapshot(state);
   const [userData, setUserData] = useState();
   const [isFriend, setIsFriend] = useState(false);
