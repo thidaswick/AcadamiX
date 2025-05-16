@@ -16,6 +16,30 @@ import {
 
 
 
+
+import {
+  Button,
+  Modal,
+  List,
+  Row,
+  Input,
+  Col,
+  Avatar,
+  Dropdown,
+  Menu,
+  message,
+  Divider,
+  Tooltip,
+  Badge
+} from "antd";
+import PostService from "../../Services/PostService";
+import CommentCard from "./CommentCard";
+// import "./FriendsPost.css"; // Make sure to create this CSS file
+
+
+
+
+
 import {
   Button,
   Modal,
