@@ -51,9 +51,7 @@ const CreateSkillPlanModal = () => {
       setLoading(false);
     }
   };
-//import React, { useState } from "react";
-//import { Modal, Form, Input, Button, Select, DatePicker, Checkbox, message } from "antd";
-//import { useSnapshot } from "valtio";
+
   return (
     <Modal
       title="Create New Skill Plan"
