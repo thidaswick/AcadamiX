@@ -83,6 +83,32 @@ const FriendProfileModal = () => {
     checkFriendshipStatus();
   }, []);
 
+
+//add
+{snap.selectedUserProfile?.id !== snap.currentUser?.uid && (
+  isFriend ? (
+    <Button danger type="dashed" onClick={unfriend} loading={loading}>
+      Unfriend
+    </Button>
+  ) : (
+    <Button type="primary" onClick={addFriend} loading={loading}>
+      Add Friend
+    </Button>
+  )
+)}
+</div>
+</Row>
+//add
+
+
+
+
+
+
+
+
+
+
   return (
     <Modal
       onCancel={() => {
