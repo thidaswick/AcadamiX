@@ -12,6 +12,9 @@ const CreateSkillPlanModal = () => {
   const [loading, setLoading] = useState(false);
   const [form] = Form.useForm();
 
+  
+
+
   const handleSubmit = async () => {
     try {
       setLoading(true);
@@ -51,6 +54,8 @@ const CreateSkillPlanModal = () => {
       setLoading(false);
     }
   };
+
+  
 
   return (
     <Modal
@@ -98,6 +103,7 @@ const CreateSkillPlanModal = () => {
         >
           <DatePicker style={{ width: "100%" }} />
         </Form.Item>
+        
         
         <Form.Item
           name="isFinished"
