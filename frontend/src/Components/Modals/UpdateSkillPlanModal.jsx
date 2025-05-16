@@ -47,13 +47,7 @@ const UpdateSkillPlanModal = () => {
         return;
       }
 
-    //} catch (err) {
-   //  console.error("Update failed:", err);
-   //   message.error("Update failed");
-  //  } finally {
-   //   setLoading(false);
-   // }
-
+  
        
       // Create the updated plan - explicitly set both fields to match backend expectations
       const updatedPlan = {
