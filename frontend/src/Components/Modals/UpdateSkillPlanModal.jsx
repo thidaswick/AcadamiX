@@ -46,13 +46,13 @@ const UpdateSkillPlanModal = () => {
         message.error("User not authenticated");
         return;
       }
+//assss
+     await SkillPlanService.updateSkillPlan(plan.id, updated);
 
-     // await SkillPlanService.updateSkillPlan(plan.id, updated);
-
-      //state.skillPlans = snap.skillPlans.map(p =>
-      //  p.id === plan.id ? { ...p, ...updated, id: plan.id } : p
-      //);
-
+      state.skillPlans = snap.skillPlans.map(p =>
+        p.id === plan.id ? { ...p, ...updated, id: plan.id } : p
+      );
+//asss
       
       // Create the updated plan - explicitly set both fields to match backend expectations
       const updatedPlan = {
