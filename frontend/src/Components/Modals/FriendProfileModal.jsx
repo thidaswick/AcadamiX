@@ -48,6 +48,17 @@ const FriendProfileModal = () => {
     } else {
       message.warning("You are already friends with this user.");
     }
+//add
+    const { TabPane } = Tabs;
+
+    const FriendProfileModal = () => {
+      const snap = useSnapshot(state);
+      const [userData, setUserData] = useState();
+      const [isFriend, setIsFriend] = useState(false);
+      const [loading, setLoading] = useState(false);
+
+//add
+
   };
   const checkFriendshipStatus = async () => {
     try {
