@@ -46,8 +46,11 @@ const UpdateSkillPlanModal = () => {
         message.error("User not authenticated");
         return;
       }
-
-      
+//add
+      state.skillPlans = await SkillPlanService.getUserSkillPlans(snap.currentUser.uid);
+      message.success("Skill plan updated");
+      state.updateSkillPlanOpened = false;
+  //add    
       // Create the updated plan - explicitly set both fields to match backend expectations
       const updatedPlan = {
         ...values,
