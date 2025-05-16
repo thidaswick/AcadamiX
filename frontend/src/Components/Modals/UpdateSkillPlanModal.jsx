@@ -11,7 +11,7 @@ const UpdateSkillPlanModal = () => {
   const snap = useSnapshot(state);
   const selectedSkillPlan = snap.selectedSkillPlanToUpdate;
   const [updateSkillPlanLoading, setUpdateSkillPlanLoading] = useState(false);
-  const [form] = Form.useForm();
+  const [form] = Form.useForm();s
 
   useEffect(() => {
     if (selectedSkillPlan) {
