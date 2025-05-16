@@ -15,6 +15,20 @@ const UpdateSkillPlanModal = () => {
 
 
 
+//  const handleUpdate = async (values) => {
+  //  try {
+    //  setLoading(true);
+     // if (!snap.currentUser?.uid) return message.error("User not authenticated");
+
+    //  const updated = {
+    //    ...values,
+      //  userId: snap.currentUser.uid,
+      //  date: values.date.format("YYYY-MM-DD"),
+      //  isFinished: !!values.isFinished,
+      //  finished: !!values.isFinished,
+     // };
+
+
 
   useEffect(() => {
     if (selectedSkillPlan) {
