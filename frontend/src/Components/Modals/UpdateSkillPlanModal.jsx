@@ -13,6 +13,16 @@ const UpdateSkillPlanModal = () => {
   const [updateSkillPlanLoading, setUpdateSkillPlanLoading] = useState(false);
   const [form] = Form.useForm();
 
+  //const { Option } = Select;
+
+ // const UpdateSkillPlanModal = () => {
+  //  const snap = useSnapshot(state);
+   // const [form] = Form.useForm();
+   // const [loading, setLoading] = useState(false);
+   // const plan = snap.selectedSkillPlanToUpdate;
+
+
+
   useEffect(() => {
     if (selectedSkillPlan) {
       // Check both isFinished and finished properties to handle any backend inconsistency
