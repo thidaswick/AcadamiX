@@ -18,6 +18,9 @@ public class UserManager implements UserDetailsManager {
     private UserRepository userRepository;
 
     @Autowired
+    private UserRepository userRepository;
+
+    @Autowired
     PasswordEncoder passwordEncoder;
 
     @Override
