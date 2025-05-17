@@ -42,6 +42,10 @@ public class UserConnection {
         return friendIds;
     }
 
+    public String getUserId() {
+        return userId;
+    }
+
     public void setFriendIds(List<String> friendIds) {
         this.friendIds = friendIds;
     }
