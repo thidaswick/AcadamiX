@@ -15,14 +15,16 @@ public class UserConnection {
     public UserConnection() {
     }
 
+   
+    public String getId() {
+        return id;
+    }
+
     public UserConnection(String userId, List<String> friendIds) {
         this.userId = userId;
         this.friendIds = friendIds;
     }
 
-    public String getId() {
-        return id;
-    }
 
     public void setId(String id) {
         this.id = id;
