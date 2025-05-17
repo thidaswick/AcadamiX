@@ -19,8 +19,3 @@ public class Post {
     private String mediaType;
 }
 
-
-@Getter
-@Setter
-@Document(collection = "posts")
-public class Post {
