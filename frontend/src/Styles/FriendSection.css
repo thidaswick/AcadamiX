@@ -1,97 +1,96 @@
-/* FriendsSection.css - Enhanced Version */
+/* FriendsSection.css - Modern Refresh */
 
 .friends-section {
-  padding: 40px 20px;
-  background: #f9fafb;
+  padding: 48px 20px;
+  background: #f0f2f5;
 }
 
 .friends-header {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 32px;
-  padding-bottom: 20px;
-  border-bottom: 2px solid #e0e0e0;
+  margin-bottom: 36px;
+  padding-bottom: 18px;
+  border-bottom: 2px solid #d9d9d9;
 }
 
 .friends-icon {
-  font-size: 28px;
-  color: #1890ff;
-  margin-right: 14px;
+  font-size: 30px;
+  color: #4c8df6;
+  margin-right: 12px;
 }
 
 .friends-header h2 {
   margin: 0;
-  font-size: 28px;
-  font-weight: 700;
-  color: #1f1f1f;
+  font-size: 30px;
+  font-weight: 800;
+  color: #2b2b2b;
 }
 
 .friends-count {
   margin-left: 14px;
-  color: #8c8c8c;
+  color: #7d7d7d;
   font-size: 16px;
 }
 
 .friends-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 24px;
 }
 
 .friend-card {
-  position: relative;
   background: #ffffff;
-  border-radius: 16px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+  border-radius: 18px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
   overflow: hidden;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  height: 100%;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
   display: flex;
   flex-direction: column;
-  border-top: 4px solid #1890ff;
+  border-top: 5px solid #4c8df6;
 }
 
 .friend-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+  transform: translateY(-6px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
 }
 
 .friend-favorite {
-  border-top: 4px solid #faad14;
+  border-top-color: #ffc107;
 }
 
 .favorite-badge {
   position: absolute;
-  top: 16px;
-  right: 16px;
-  color: #faad14;
-  font-size: 20px;
-  background: #fff7e6;
-  padding: 6px 10px;
-  border-radius: 20px;
-  font-weight: bold;
+  top: 14px;
+  right: 14px;
+  background: #fff3cd;
+  color: #d48806;
+  padding: 6px 12px;
+  border-radius: 18px;
+  font-weight: 600;
+  font-size: 14px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
 }
 
 .friend-card-header {
+  background: linear-gradient(120deg, #6a11cb 0%, #2575fc 100%);
   text-align: center;
-  padding: 32px 0 16px;
-  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+  padding: 36px 0 20px;
   position: relative;
 }
 
 .friend-avatar {
-  width: 90px;
-  height: 90px;
-  object-fit: cover;
+  width: 92px;
+  height: 92px;
   border-radius: 50%;
-  border: 4px solid #ffffff;
+  border: 4px solid #fff;
+  object-fit: cover;
   margin: 0 auto;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 .friend-card-body {
-  padding: 24px;
+  padding: 22px;
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -99,20 +98,20 @@
 }
 
 .friend-name {
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 700;
-  margin: 16px 0 12px;
+  color: #2d2d2d;
   text-align: center;
-  color: #333;
+  margin: 16px 0 12px;
 }
 
 .friend-status {
   display: flex;
   justify-content: center;
-  gap: 16px;
-  margin-bottom: 20px;
+  gap: 18px;
+  margin-bottom: 16px;
   font-size: 14px;
-  color: #888;
+  color: #666;
 }
 
 .friend-status-item {
@@ -122,15 +121,15 @@
 }
 
 .friend-bio {
-  background-color: #f5f5f5;
+  background: #f7f7f7;
   border-radius: 10px;
-  padding: 14px;
+  padding: 16px;
   font-size: 15px;
-  color: #555;
-  line-height: 1.6;
-  max-height: 100px;
-  overflow-y: auto;
+  color: #444;
   text-align: center;
+  line-height: 1.6;
+  max-height: 110px;
+  overflow-y: auto;
   margin-bottom: 20px;
 }
 
@@ -138,35 +137,34 @@
   display: flex;
   justify-content: space-around;
   padding: 16px;
-  border-top: 1px solid #ececec;
-  background-color: #fafafa;
+  border-top: 1px solid #eaeaea;
+  background-color: #fbfbfb;
 }
 
 .friend-action-btn {
   font-size: 18px;
-  color: #1890ff;
+  color: #4c8df6;
   cursor: pointer;
-  transition: color 0.3s;
+  transition: color 0.3s ease;
 }
 
 .friend-action-btn:hover {
-  color: #40a9ff;
+  color: #76a9f9;
 }
 
 /* Scrollbar for bio */
 .friend-bio::-webkit-scrollbar {
   width: 6px;
 }
-
 .friend-bio::-webkit-scrollbar-thumb {
   background-color: #c1c1c1;
-  border-radius: 4px;
+  border-radius: 3px;
 }
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .friends-grid {
-    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   }
 }
 
