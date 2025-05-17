@@ -15,4 +15,11 @@ public class UserDTO {
                 .username(user.getUsername())
                 .build();
     }
+
+    public static UserDTO from(User user) {
+        return builder()
+                .id(user.getId())
+                .username(user.getUsername())
+                .build();
+    }
 }

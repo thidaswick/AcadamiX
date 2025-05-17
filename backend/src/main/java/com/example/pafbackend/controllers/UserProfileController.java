@@ -16,6 +16,10 @@ public class UserProfileController {
     @Autowired
     private UserProfileRepository userProfileRepository;
 
+    public UserProfile createUserProfile(@RequestBody UserProfile userProfile) {
+        return userProfileRepository.save(userProfile);
+    }
+
     // Create a new UserProfile
     @PostMapping
     public UserProfile createUserProfile(@RequestBody UserProfile userProfile) {
