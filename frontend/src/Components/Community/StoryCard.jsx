@@ -12,6 +12,14 @@ const StoryCard = ({ card }) => {
     state.workoutStoryOpen = true;
   };
 
+  const StoryCard = ({ card }) => {
+    const snap = useSnapshot(state);
+  
+    const handleClick = () => {
+      state.selectedWorkoutStory = card;
+      state.workoutStoryOpen = true;
+    };
+
   return (
     <div className="story-card" onClick={handleClick}>
       <div className="story-image-container">
