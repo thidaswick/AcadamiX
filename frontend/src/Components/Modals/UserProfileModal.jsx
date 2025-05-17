@@ -45,6 +45,12 @@ const UserProfileModal = () => {
         uid: snap.currentUser?.id,
       });
 
+      useEffect(() => {
+        if (snap.profileModalOpend) {
+          setImageChanged(false);
+        }
+      }, [snap.profileModalOpend]);
+    
       // After successful update, refresh current user data
       const updatedUserData = await UserService.getProfile();
       state.currentUser = updatedUserData; // Update the global state
