@@ -66,6 +66,13 @@ const UserProfileModal = () => {
     }
   };
 
+  useEffect(() => {
+    if (snap.profileModalOpend) {
+      setImageChanged(false);
+    }
+  }, [snap.profileModalOpend]);
+
+
   const handleFileUpload = async (file) => {
     try {
       const url = await uploader.uploadFile(file, "userImages");
