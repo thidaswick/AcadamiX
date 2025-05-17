@@ -67,6 +67,17 @@ const UserConnectionService = {
       throw error;
     }
   },
+  try {
+    const accessToken = localStorage.getItem("accessToken");
+    const config = {
+      headers: {
+        Authorization: `Bearer ${accessToken}`,
+      },
+    };
+    const response = await axios.delete(
+      `${API_URL}/${userId}/friends/${friendId}`,
+      config
+    );
 };
 
 export default UserConnectionService;
