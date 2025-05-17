@@ -20,3 +20,7 @@ public class Post {
 }
 
 
+@Getter
+@Setter
+@Document(collection = "posts")
+public class Post {
