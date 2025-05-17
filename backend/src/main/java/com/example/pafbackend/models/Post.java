@@ -19,3 +19,13 @@ public class Post {
     private String mediaType;
 }
 
+@Id
+    private String id;
+
+    private String userId;
+    private Date timestamp;
+
+    private String contentDescription;
+    private String mediaLink;
+    private String mediaType;
+}
